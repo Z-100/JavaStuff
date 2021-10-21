@@ -1,4 +1,4 @@
-package testing.examples;
+package learn.testing.examples;
 
 public class Calculator {
 
