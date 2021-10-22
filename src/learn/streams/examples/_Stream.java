@@ -47,22 +47,22 @@ public class _Stream {
 				.forEach(System.out::println);
 	}
 
-	private static void matchFunctionStream(List<Customer> customers) {
-		// * A Predicate, checking if the customers gender is female
-		Predicate<Customer> customerPredicate = customer -> FEMALE.equals(customer.getGender());
-
-		// * Extracts the created stream to a variable (ctrl + alt + v)
-		boolean containsOnlyFemales = customers.stream()
-				// * Loops through the list and checks if <every> item in the list
-				// * matches the predicate and therefore returns a boolean
-				.allMatch(customerPredicate)
-				// ? Won't work, but this method returns true if any item matches
-				.anyMatch(customerPredicate)
-				// ? Won't work, but this method returns true if no item matches
-				.noneMatch(customerPredicate);
-
-		System.out.println(containsOnlyFemales);
-	}
+//	private static void matchFunctionStream(List<Customer> customers) {
+//		// * A Predicate, checking if the customers gender is female
+//		Predicate<Customer> customerPredicate = customer -> FEMALE.equals(customer.getGender());
+//
+//		// * Extracts the created stream to a variable (ctrl + alt + v)
+//		boolean containsOnlyFemales = customers.stream()
+//				// * Loops through the list and checks if <every> item in the list
+//				// * matches the predicate and therefore returns a boolean
+//				.allMatch(customerPredicate)
+//				// ? Won't work, but this method returns true if any item matches
+//				.anyMatch(customerPredicate)
+//				// ? Won't work, but this method returns true if no item matches
+//				.noneMatch(customerPredicate);
+//
+//		System.out.println(containsOnlyFemales);
+//	}
 
 	private static void filterFunctionStream(List<Customer> customers) {
 		// * Extracts the created stream to a variable (ctrl + alt + v)
